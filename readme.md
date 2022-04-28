@@ -28,7 +28,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_create_password"></a> [create\_password](#input\_create\_password) | Should I create a random password | `bool` | `true` | no |
 | <a name="input_password_length"></a> [password\_length](#input\_password\_length) | Length of the password | `number` | `32` | no |
 | <a name="input_password_lower"></a> [password\_lower](#input\_password\_lower) | Use lowercase characters in the password | `bool` | `true` | no |
 | <a name="input_password_min_lower"></a> [password\_min\_lower](#input\_password\_min\_lower) | Minimum number of lowercase characters in the password | `number` | `5` | no |
@@ -43,4 +42,6 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_random_password_result"></a> [random\_password\_result](#output\_random\_password\_result) | n/a |
