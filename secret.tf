@@ -5,7 +5,7 @@ resource "random_password" "this" {
   min_numeric      = var.password_min_numeric
   min_special      = var.password_min_special
   min_upper        = var.password_min_upper
-  number           = var.password_number
+  numeric          = var.password_number
   override_special = var.password_override_special
   special          = var.password_special
   upper            = var.password_upper

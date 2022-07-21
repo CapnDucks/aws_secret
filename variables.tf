@@ -5,7 +5,7 @@ variable "password_length" {
 }
 
 variable "password_special" {
-  default     = true
+  default     = false
   description = "Use of special chars in password"
   type        = bool
 }
@@ -23,25 +23,25 @@ variable "password_lower" {
 }
 
 variable "password_min_lower" {
-  default     = 5
+  default     = 1
   description = "Minimum number of lowercase characters in the password"
   type        = number
 }
 
 variable "password_min_numeric" {
-  default     = 5
+  default     = 1
   description = "Minimum number of nueric characters in the password"
   type        = number
 }
 
 variable "password_min_special" {
-  default     = 5
+  default     = 0
   description = "Minimum number of special characters in the password"
   type        = number
 }
 
 variable "password_min_upper" {
-  default     = 5
+  default     = 1
   description = "Minimum number of uppercase characters in the password"
   type        = number
 }
@@ -61,4 +61,8 @@ variable "password_upper" {
 variable "secrets_manager_secret" {
   description = "Name of the secret (not the value)"
   type        = string
+}
+
+variable "admin_user" {
+  type = string
 }

@@ -4,5 +4,10 @@ resource "aws_secretsmanager_secret" "this" {
 
 resource "aws_secretsmanager_secret_version" "this" {
   secret_id     = aws_secretsmanager_secret.this.id
-  secret_string = random_password.this.result
+  secret_string = <<EOF
+    {
+      "username": "${var.admin_user}",
+      "password": "${random_password.this.result}"
+    }
+  EOF
 }
