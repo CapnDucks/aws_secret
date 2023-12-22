@@ -63,6 +63,6 @@ variable "secrets_manager_secret" {
   type        = string
 }
 
-variable "admin_user" {
+variable "db_admin_user" {
   type = string
 }
