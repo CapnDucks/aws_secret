@@ -118,7 +118,7 @@ variable "secret_name_prefix" {
 }
 
 variable "kms_name" {
-  default     = null
+  default     = ""
   description = ""
   type        = string
 }
@@ -153,6 +153,8 @@ variable "secret_replica" {
     kms_key_id = null
     region     = null
   }
+  description = ""
+  type        = map(string)
 }
 
 variable "secret_force_overwrite_replica_secret" {
