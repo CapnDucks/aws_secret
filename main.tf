@@ -1,9 +1,11 @@
 resource "aws_secretsmanager_secret" "this" {
-  name = var.secrets_manager_secret
+  name       = var.secrets_manager_secret
+  kms_key_id = module.kms.kms_key.id
 }
 
 resource "aws_secretsmanager_secret_version" "this" {
-  secret_id     = aws_secretsmanager_secret.this.id
+  secret_id = aws_secretsmanager_secret.this.id
+
   secret_string = <<EOF
     {
       "username": "${var.db_admin_user}",

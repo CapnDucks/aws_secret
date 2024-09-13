@@ -7,3 +7,7 @@ output "random_password_result" {
 output "db_admin_user" {
   value = var.db_admin_user
 }
+
+output "kms_key" {
+  value = module.kms.kms_key.arn
+}

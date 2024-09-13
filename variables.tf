@@ -66,3 +66,16 @@ variable "secrets_manager_secret" {
 variable "db_admin_user" {
   type = string
 }
+
+variable "kms_key_alias" {
+}
+
+variable "kms_multi_region" {
+    default = false
+    
+}
+
+variable "kms_deletion_window" {
+    default = 14
+    
+}
