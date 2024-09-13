@@ -1,3 +1,9 @@
+variable "password_description" {
+  default     = null
+  description = "Description of the password."
+  type        = string
+}
+
 variable "password_length" {
   default     = 32
   description = "Length of the password"
@@ -59,23 +65,26 @@ variable "password_upper" {
 }
 
 variable "secrets_manager_secret" {
+  default     = null
   description = "Name of the secret (not the value)"
   type        = string
 }
 
-variable "db_admin_user" {
-  type = string
-}
-
 variable "kms_key_alias" {
+  default    = null
+  desription = ""
+  type       = string
 }
 
 variable "kms_multi_region" {
-    default = false
-    
+  default     = false
+  description = ""
+  type        = bool
+
 }
 
 variable "kms_deletion_window" {
-    default = 14
-    
+  default     = 14
+  description = ""
+  type        = number
 }
