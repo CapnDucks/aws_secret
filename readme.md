@@ -30,10 +30,10 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_kms_deletion_window"></a> [kms\_deletion\_window](#input\_kms\_deletion\_window) | n/a | `number` | `14` | no |
-| <a name="input_kms_key_alias"></a> [kms\_key\_alias](#input\_kms\_key\_alias) | n/a | `string` | `null` | no |
-| <a name="input_kms_multi_region"></a> [kms\_multi\_region](#input\_kms\_multi\_region) | n/a | `bool` | `false` | no |
+| <a name="input_kms_key_alias"></a> [kms\_key\_alias](#input\_kms\_key\_alias) | KMS key alias. | `string` | `null` | no |
+| <a name="input_kms_key_deletion_window_in_days"></a> [kms\_key\_deletion\_window\_in\_days](#input\_kms\_key\_deletion\_window\_in\_days) | KMS key deletion window (in days). | `number` | `14` | no |
 | <a name="input_password_description"></a> [password\_description](#input\_password\_description) | Description of the password. | `string` | `null` | no |
+| <a name="input_password_kms_key_id"></a> [password\_kms\_key\_id](#input\_password\_kms\_key\_id) | KMS key id for the password. | `string` | `null` | no |
 | <a name="input_password_length"></a> [password\_length](#input\_password\_length) | Length of the password | `number` | `32` | no |
 | <a name="input_password_lower"></a> [password\_lower](#input\_password\_lower) | Use lowercase characters in the password | `bool` | `true` | no |
 | <a name="input_password_min_lower"></a> [password\_min\_lower](#input\_password\_min\_lower) | Minimum number of lowercase characters in the password | `number` | `1` | no |
@@ -50,6 +50,6 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_db_admin_user"></a> [db\_admin\_user](#output\_db\_admin\_user) | n/a |
 | <a name="output_kms_key"></a> [kms\_key](#output\_kms\_key) | n/a |
+| <a name="output_local"></a> [local](#output\_local) | n/a |
 | <a name="output_random_password_result"></a> [random\_password\_result](#output\_random\_password\_result) | n/a |
