@@ -89,13 +89,13 @@
 |------|-------------|------|---------|:--------:|
 | <a name="input_kms_deletion_window"></a> [kms\_deletion\_window](#input\_kms\_deletion\_window) | KMS key deletion window (in days). | `number` | `14` | no |
 | <a name="input_kms_key_alias"></a> [kms\_key\_alias](#input\_kms\_key\_alias) | KMS key alias. | `string` | `null` | no |
-| <a name="input_kms_key_recovery_window"></a> [kms\_key\_recovery\_window](#input\_kms\_key\_recovery\_window) | n/a | `any` | n/a | yes |
+| <a name="input_kms_key_recovery_window"></a> [kms\_key\_recovery\_window](#input\_kms\_key\_recovery\_window) | n/a | `string` | `null` | no |
 | <a name="input_kms_multi_region"></a> [kms\_multi\_region](#input\_kms\_multi\_region) | KMS multi region?. | `bool` | `false` | no |
-| <a name="input_kms_name"></a> [kms\_name](#input\_kms\_name) | n/a | `any` | n/a | yes |
-| <a name="input_kms_name_prefix"></a> [kms\_name\_prefix](#input\_kms\_name\_prefix) | n/a | `any` | n/a | yes |
-| <a name="input_kms_tags"></a> [kms\_tags](#input\_kms\_tags) | n/a | `map(string)` | `{}` | no |
+| <a name="input_kms_name"></a> [kms\_name](#input\_kms\_name) | n/a | `string` | `null` | no |
+| <a name="input_kms_name_prefix"></a> [kms\_name\_prefix](#input\_kms\_name\_prefix) | n/a | `string` | `null` | no |
+| <a name="input_kms_tags"></a> [kms\_tags](#input\_kms\_tags) | Tags for the KMS key. | `map(string)` | `{}` | no |
 | <a name="input_secret_description"></a> [secret\_description](#input\_secret\_description) | Description of the secret. | `string` | `null` | no |
-| <a name="input_secret_force_overwrite_replica_secret"></a> [secret\_force\_overwrite\_replica\_secret](#input\_secret\_force\_overwrite\_replica\_secret) | n/a | `any` | n/a | yes |
+| <a name="input_secret_force_overwrite_replica_secret"></a> [secret\_force\_overwrite\_replica\_secret](#input\_secret\_force\_overwrite\_replica\_secret) | n/a | `string` | `null` | no |
 | <a name="input_secret_kms_key_id"></a> [secret\_kms\_key\_id](#input\_secret\_kms\_key\_id) | KMS key id for the secret. | `string` | `null` | no |
 | <a name="input_secret_length"></a> [secret\_length](#input\_secret\_length) | Length of the secret. | `number` | `32` | no |
 | <a name="input_secret_lower"></a> [secret\_lower](#input\_secret\_lower) | Use lowercase characters in the secret? | `bool` | `true` | no |
@@ -103,12 +103,12 @@
 | <a name="input_secret_min_numeric"></a> [secret\_min\_numeric](#input\_secret\_min\_numeric) | Minimum number of nueric characters in the secret. | `number` | `1` | no |
 | <a name="input_secret_min_special"></a> [secret\_min\_special](#input\_secret\_min\_special) | Minimum number of special characters in the secret. | `number` | `0` | no |
 | <a name="input_secret_min_upper"></a> [secret\_min\_upper](#input\_secret\_min\_upper) | Minimum number of uppercase characters in the secret. | `number` | `1` | no |
-| <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | n/a | `any` | `null` | no |
-| <a name="input_secret_name_prefix"></a> [secret\_name\_prefix](#input\_secret\_name\_prefix) | n/a | `any` | `null` | no |
+| <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | n/a | `string` | `null` | no |
+| <a name="input_secret_name_prefix"></a> [secret\_name\_prefix](#input\_secret\_name\_prefix) | n/a | `string` | `null` | no |
 | <a name="input_secret_number"></a> [secret\_number](#input\_secret\_number) | Use numbers in the secret? | `bool` | `true` | no |
 | <a name="input_secret_override_special"></a> [secret\_override\_special](#input\_secret\_override\_special) | Override these special characters in the secret. | `string` | `"!#$%&*()-_=+[]{}<>:?"` | no |
-| <a name="input_secret_policy"></a> [secret\_policy](#input\_secret\_policy) | n/a | `any` | n/a | yes |
-| <a name="input_secret_recovery_window_in_days"></a> [secret\_recovery\_window\_in\_days](#input\_secret\_recovery\_window\_in\_days) | n/a | `any` | n/a | yes |
+| <a name="input_secret_policy"></a> [secret\_policy](#input\_secret\_policy) | n/a | `string` | `null` | no |
+| <a name="input_secret_recovery_window_in_days"></a> [secret\_recovery\_window\_in\_days](#input\_secret\_recovery\_window\_in\_days) | n/a | `string` | `null` | no |
 | <a name="input_secret_replica"></a> [secret\_replica](#input\_secret\_replica) | n/a | `map` | <pre>{<br>  "kms_key_id": null,<br>  "region": null<br>}</pre> | no |
 | <a name="input_secret_special"></a> [secret\_special](#input\_secret\_special) | Use special chars in the secret? | `bool` | `false` | no |
 | <a name="input_secret_tags"></a> [secret\_tags](#input\_secret\_tags) | Default tags for the secret. | `map(string)` | `{}` | no |
