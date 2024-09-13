@@ -7,7 +7,3 @@ output "random_password_result" {
 output "kms_key" {
   value = module.kms.kms_key.arn
 }
-
-output "local" {
-  value = local.kms_key_alias
-}
