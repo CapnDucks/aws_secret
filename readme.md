@@ -120,6 +120,5 @@
 | Name | Description |
 |------|-------------|
 | <a name="output_kms_key"></a> [kms\_key](#output\_kms\_key) | n/a |
-| <a name="output_local"></a> [local](#output\_local) | n/a |
 | <a name="output_random_password_result"></a> [random\_password\_result](#output\_random\_password\_result) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
