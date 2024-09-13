@@ -102,25 +102,61 @@ variable "kms_multi_region" {
 
 variable "kms_tags" {
   default     = {}
-  description = ""
+  description = "Tags for the KMS key."
   type        = map(string)
 }
 
 variable "secret_name" {
-  default = null
+  default     = null
+  description = ""
+  type        = string
 }
 variable "secret_name_prefix" {
-  default = null
+  default     = null
+  description = ""
+  type        = string
 }
-variable "kms_name" {}
-variable "kms_name_prefix" {}
-variable "kms_key_recovery_window" {}
-variable "secret_policy" {}
-variable "secret_recovery_window_in_days" {}
+
+variable "kms_name" {
+  default     = null
+  description = ""
+  type        = string
+}
+
+variable "kms_name_prefix" {
+  default     = null
+  description = ""
+  type        = string
+}
+
+variable "kms_key_recovery_window" {
+  default     = null
+  description = ""
+  type        = string
+}
+
+
+variable "secret_policy" {
+  default     = null
+  description = ""
+  type        = string
+}
+
+variable "secret_recovery_window_in_days" {
+  default     = null
+  description = ""
+  type        = string
+}
+
 variable "secret_replica" {
   default = {
     kms_key_id = null
     region     = null
   }
 }
-variable "secret_force_overwrite_replica_secret" {}
+
+variable "secret_force_overwrite_replica_secret" {
+  default     = null
+  description = ""
+  type        = string
+}
