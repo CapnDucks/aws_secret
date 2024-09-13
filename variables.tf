@@ -71,9 +71,9 @@ variable "secrets_manager_secret" {
 }
 
 variable "kms_key_alias" {
-  default    = null
-  desription = ""
-  type       = string
+  default     = null
+  description = ""
+  type        = string
 }
 
 variable "kms_multi_region" {
