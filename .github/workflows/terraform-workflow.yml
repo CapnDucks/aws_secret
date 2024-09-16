@@ -1,3 +1,14 @@
+name: "Terraform Workflow"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+  workflow_dispatch:
+
 defaults:
   run:
     working-directory: ${{ env.tf_actions_working_dir }}
@@ -7,8 +18,8 @@ steps:
 - uses: actions/checkout@v4
 - uses: hashicorp/setup-terraform@v3
   with:
-    terraform_wrapper: true
-    terraform_version: 1.9.5
+  terraform_wrapper: true
+  terraform_version: 1.9.5
 
 - name: Terraform fmt
   id: fmt
